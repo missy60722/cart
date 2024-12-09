@@ -44,11 +44,11 @@ class ShoppingCart:
                 self.shopping_cart.clear()
                 print(f"\n付款成功！剩餘餘額: ${self.user_balance}")
 
-    # def checkBalance(self):
-    #     if self.user_balance > 0:
-    #         print(f"\n剩餘餘額: ${self.user_balance}")
-    #     else:
-    #         print("\n餘額不足")
+    def checkBalance(self):
+        if self.user_balance > 0:
+            print(f"\n剩餘餘額: ${self.user_balance}")
+        else:
+            print("\n餘額不足")
 
     def remove_from_cart(self, product_id):
         """刪除購物車內的商品"""
